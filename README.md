@@ -14,3 +14,6 @@ Projeto desenvolvido para praticar lógica de programação, organização de c�
 - Manipulação de listas
 - Separação de responsabilidades
 
+## Testes
+O projeto possui testes unitários utilizando pytest, focando nas regras de negócio do jogo.
+
