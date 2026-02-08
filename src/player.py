@@ -18,3 +18,9 @@ class Player:
 
     def reset_hand(self):
         self.hand = []
+        
+    def is_busted(self):
+    return self.hand_value() > 21
+    
+    if self.player.is_busted():
+    print("Você estourou!")
