@@ -3,14 +3,17 @@ from player import Player
 
 class BlackjackGame:
     def __init__(self):
-        self.deck = Deck()
         self.player = Player("Jogador")
         self.dealer = Player("Dealer")
+        self.deck = Deck()
 
-    def start_game(self):
+    def reset(self):
+        self.deck = Deck()
         self.player.reset_hand()
         self.dealer.reset_hand()
 
+    def start_game(self):
+        self.reset()
         for _ in range(2):
             self.player.add_card(self.deck.draw_card())
             self.dealer.add_card(self.deck.draw_card())
